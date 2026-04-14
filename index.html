@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tommy Hoang | iOS Developer</title>
+  <meta name="description" content="Portfolio of Tommy Hoang, an iOS developer building practical SwiftUI apps with clean UX.">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="Tommy Hoang | iOS Developer">
+  <meta property="og:description" content="I build practical, polished iOS apps with SwiftUI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tommyhoang.com">
+  <link rel="canonical" href="https://tommyhoang.com">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top">Tommy Hoang</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero container">
+      <p class="eyebrow">iOS Developer</p>
+      <h1>I build practical apps with clean UX and reliable behavior.</h1>
+      <p class="hero-copy">
+        I am Tommy Hoang, a SwiftUI-focused developer who enjoys shipping polished products quickly.
+        I turn rough ideas into tools people can actually use.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-secondary" href="mailto:hi@tommyhoang.com">Email Me</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        I focus on clear interfaces, smooth interactions, and dependable behavior. My recent work includes
+        Root Timer, a turn timer app designed for in-person games with quick setup and easy player switching.
+      </p>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Selected Projects</h2>
+      <div class="project-grid">
+        <article class="card">
+          <h3>Root Timer</h3>
+          <p>Built a tap-friendly turn timer app in SwiftUI for tabletop and group games.</p>
+          <p>Implemented per-player timing, pause/resume, and active-player transitions for smoother gameplay.</p>
+        </article>
+        <article class="card">
+          <h3>Project Placeholder</h3>
+          <p>Add your next project summary here.</p>
+          <p>Include the problem, implementation, and measurable outcome in 2-3 sentences.</p>
+        </article>
+        <article class="card">
+          <h3>Project Placeholder</h3>
+          <p>Add your third project summary here.</p>
+          <p>Keep details concrete: what you built, for whom, and what improved.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>If you want to collaborate or discuss a role, send me a message.</p>
+
+      <form id="contact-form" class="contact-form" method="POST" action="https://formspree.io/f/xnjlnlvw">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required autocomplete="name">
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-primary" type="submit">Send Message</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Tommy Hoang</p>
+    <ul class="footer-links">
+      <li><a href="https://www.linkedin.com/in/hoangtommy">LinkedIn</a></li>
+      <li><a href="mailto:hi@tommyhoang.com">hi@tommyhoang.com</a></li>
+    </ul>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
