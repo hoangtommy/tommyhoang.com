@@ -9,8 +9,11 @@ if (yearEl) {
 
 if (formEl && statusEl && iframeEl) {
   let submitted = false;
+  const loadedAt = Date.now();
+  const elapsedEl = formEl.querySelector('[name="_elapsed"]');
 
   formEl.addEventListener("submit", () => {
+    if (elapsedEl) elapsedEl.value = String(Date.now() - loadedAt);
     submitted = true;
     statusEl.textContent = "Sending...";
   });
